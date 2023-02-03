@@ -1,12 +1,12 @@
 {% extends "template.html" %}
 {% block conteudo %}
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-<a class="btn btn-primary" href="{{ url_for('novo') }}">Novo Jogo</a>
+<a class="btn btn-primary" href="{{ url_for('novo') }}">Novo Post</a>
     <div class="container">
       <div class="row">
                 {% for lista in lista %}
                 <div class="g-mb-15">
-                  <h1>{{ lista.nome }}</h1>
+                  <h2>{{ lista.nome }}</h2>
                 </div>
                   <p>
                     {{ lista.comentario }}

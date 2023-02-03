@@ -1,5 +1,5 @@
 
-h1 {
+h2 {
     --s: 0.1em;   /* the thickness of the line */
     --c: #2c4bff; /* the color */
     
@@ -14,7 +14,7 @@ h1 {
     font-family: system-ui, sans-serif;
     font-size: 20px;
   }
-h1:hover {--_p: 100%}
+h2:hover {--_p: 100%}
   
 body{
     margin-top:20px;

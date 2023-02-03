@@ -12,14 +12,14 @@ usuario_dao = UsuarioDao(db)
 @app.route('/')
 def index():
     lista = comentario_dao.listar()
-    return render_template('lista.html', titulo='Jogos', lista=lista)
+    return render_template('lista.html', titulo='Faça um Post!', lista=lista)
 
 
 @app.route('/novo')
 def novo():
     if 'usuario_logado' not in session or session['usuario_logado'] == None:
         return redirect(url_for('login', proxima=url_for('novo')))
-    return render_template('novo.html', titulo='Novo Jogo')
+    return render_template('novo.html', titulo='Novo Post')
 
 
 @app.route('/criar', methods=['POST',])
