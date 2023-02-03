@@ -1,5 +1,5 @@
 import os
-from jogoteca import app
+from siteinit import app
 
 def recupera_imagem(id):
     for nome_arquivo in os.listdir(app.config['UPLOAD_PATH']):

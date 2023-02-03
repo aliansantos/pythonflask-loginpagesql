@@ -4,7 +4,7 @@ from models import Comentario
 import os
 import time
 from helpers import deleta_arquivo, recupera_imagem
-from jogoteca import db, app
+from siteinit import db, app
 
 comentario_dao = ComentarioDao(db)
 usuario_dao = UsuarioDao(db)
